@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Wishlist - Save your favorite luxury watches for later purchase.">
+    <title>Wishlist | Luxury Watches</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Luxury Watches</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shop.html?category=luxury">Luxury</a></li>
+                            <li><a class="dropdown-item" href="shop.html?category=sports">Sports</a></li>
+                            <li><a class="dropdown-item" href="shop.html?category=classic">Classic</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="cart.html" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-dark text-white ms-1">0</span>
+                    </a>
+                    <a href="wishlist.html" class="btn btn-outline-dark me-2" title="Wishlist">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <button class="btn btn-outline-dark">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wishlist Header -->
+    <header class="bg-light py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">My Wishlist</h1>
+            <p class="lead">Save your favorite watches and shop them anytime.</p>
+        </div>
+    </header>
+
+    <!-- Wishlist Content -->
+    <section class="py-5">
+        <div class="container">
+            <div id="wishlist-items" class="row g-4">
+                <!-- Wishlist items will be dynamically loaded here -->
+            </div>
+            <div id="empty-wishlist" class="text-center d-none">
+                <i class="fas fa-heart-broken fa-3x text-secondary mb-3"></i>
+                <h3>Your wishlist is empty</h3>
+                <p class="mb-4">Browse our shop and add your favorite watches to your wishlist.</p>
+                <a href="shop.html" class="btn btn-primary"><i class="fas fa-shopping-bag me-2"></i>Continue Shopping</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Your trusted destination for premium timepieces and luxury watches.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                        <li><a href="faq.html" class="text-light">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="text-light">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-light">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@luxurywatches.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Watch Street, NY</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Luxury Watches. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+</html> 
